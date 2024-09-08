@@ -1,0 +1,75 @@
+/* src/components/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+  }
+  body{
+    /* background-color: #333; */
+  }
+  .navbar-logo img {
+    height: 40px; 
+    border-radius: 50%;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    justify-content: center;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    position: relative; 
+    padding: 5px; 
+  }
+  
+  .navbar-links a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ff9a01;
+    transition: width 0.3s ease;
+  }
+  
+  .navbar-links a:hover::after {
+    width: 100%;
+  }
+  
+  .navbar-toggler {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px; /* Adjust based on your navbar height */
+      left: 0;
+      width: 100%;
+      background-color: #333;
+    }
+  
+    .navbar-links.active {
+      display: flex;
+    }
+  
+    .navbar-toggler {
+      display: block;
+    }
+  }
+  
