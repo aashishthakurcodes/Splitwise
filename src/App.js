@@ -2,18 +2,18 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from "react-bootstrap";
-import { Avatar } from '@mui/material'; // Import Avatar component from Material-UI
+import { Avatar } from '@mui/material'; 
 import Navbar from "./Components/Navbar/Navbar.js";
 import Board from "./Board.js";
 import avatar1 from './assets/images.jpg'
 import avatar2 from './assets/Untitled.png'
 import avatar3 from './assets/images1.jpg'
 import avatar4 from './assets/images2.jpg'
-// import { ToastContainer, toast } from 'react-toastify';
+
 import 'react-toastify/dist/ReactToastify.css';
 
 
-// Sample data for members with image URLs
+
 const members = [
   { name: 'Rajneesh', avatar: avatar1 },
   { name: 'Harshit', avatar:avatar2 },

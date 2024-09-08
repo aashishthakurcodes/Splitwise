@@ -1,0 +1,30 @@
+/* Ensure the entire container takes up the available space */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 70vh; 
+  }
+  
+  
+  .scrollable-bill-section {
+    flex: 1;
+    overflow-y: auto; 
+    padding: 20px; 
+    box-sizing: border-box;
+  }
+  
+ 
+  .user-data {
+    margin-bottom: 10px; 
+    border: 1px solid #ddd; 
+    padding: 10px; 
+  }
+  
+  
+  .remove-btn {
+    color: red;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  
